@@ -16,6 +16,7 @@ import java.math.BigDecimal;
 public class ItemPedido {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cd_pedido_item")
     private Integer id;
 
@@ -28,8 +29,8 @@ public class ItemPedido {
     @Column(name = "nr_quantidae")
     private Integer quantidade;
 
-    @ManyToOne
-    @JoinColumn(name = "cd_pedido")
-    private Pedido pedido;
+    @Column(name = "cod_pedido")
+    private Integer codPedido;
+
 
 }

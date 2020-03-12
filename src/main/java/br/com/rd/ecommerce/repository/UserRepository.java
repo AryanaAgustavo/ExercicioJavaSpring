@@ -1,5 +1,6 @@
-package br.com.rd.ecommerce.Model;
+package br.com.rd.ecommerce.repository;
 
+import br.com.rd.ecommerce.Model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

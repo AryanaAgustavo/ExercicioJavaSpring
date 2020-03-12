@@ -7,7 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EcommerceApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("server.servlet.context-path", "/ecommerce"); //criar um contexto para rodar
 		SpringApplication.run(EcommerceApplication.class, args);
 	}
+
+
 
 }

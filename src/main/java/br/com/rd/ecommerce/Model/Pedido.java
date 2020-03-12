@@ -35,6 +35,7 @@ public class Pedido {
     @Column(name = "id_cliente")
     private Integer idCliente;
 
-    @OneToMany(mappedBy = "pedido")
+    @OneToMany(cascade = CascadeType.ALL) //ação em cascata - ex: se apagar/atualizar a lista de item tbm apaga/atualiza... muda automatico
+    @JoinColumn(name = "id_pedido") //passa o nome da coluna relacionada da tabela itemPedido
     private List<ItemPedido> itemPedidos;
 }

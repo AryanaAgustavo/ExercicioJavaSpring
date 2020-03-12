@@ -3,7 +3,7 @@ package br.com.rd.ecommerce.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import br.com.rd.ecommerce.Model.User;
-import br.com.rd.ecommerce.Model.UserRepository;
+import br.com.rd.ecommerce.repository.UserRepository;
 
 import java.util.List;
 
